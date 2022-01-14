@@ -24,15 +24,23 @@ public class HumanSelect {
 			if (select == 1) {
 				System.out.println("1.전체명단 출력 선택");
 				humanView.view(ar);
+				
 			} else if (select == 2) {
 				System.out.println("2.검색하기 선택");
+				HumanDTO humanDTO = humanInput.search(ar);
+				humanView.view(humanDTO);
+
 			} else if (select == 3) {
 				System.out.println("3.추가하기 선택");
 				HumanDTO humanDTO = humanInput.add();
 				ar.add(humanDTO);
-				System.out.println(ar);
+			
+				
 			} else if (select == 4) {
 				System.out.println("4.삭제하기 선택 ");
+				Boolean result=humanInput.delete(ar);
+				humanView.delete(result);
+				
 			} else {
 				System.out.println("finish ");
 				flag = false;
