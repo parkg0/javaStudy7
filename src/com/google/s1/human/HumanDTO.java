@@ -1,6 +1,6 @@
 package com.google.s1.human;
 
-public class humanDTO {
+public class HumanDTO {
 
 	private String name;
 	private String nickname;
