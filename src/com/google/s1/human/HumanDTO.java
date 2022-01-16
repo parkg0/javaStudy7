@@ -1,12 +1,14 @@
 package com.google.s1.human;
 
+import java.util.Calendar;
+
 public class HumanDTO {
 
 	private String name;
 	private String nickname;
 	private String email;
 	private String number;
-	private String birth;
+	private Calendar birth;
 	
 	
 	public String getName() {
@@ -33,10 +35,10 @@ public class HumanDTO {
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	public String getBirth() {
+	public Calendar getBirth() {
 		return birth;
 	}
-	public void setBirth(String birth) {
+	public void setBirth(Calendar birth) {
 		this.birth = birth;
 	}
 	
